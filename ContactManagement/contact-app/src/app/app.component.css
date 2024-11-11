@@ -1,0 +1,28 @@
+/* Styling for the container */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+ 
+/* Styling for the navigation links */
+nav {
+  margin-bottom: 20px;
+}
+ 
+  nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #007bff;
+  }
+ 
+    nav a.active {
+      color: #0056b3;
+    }
+ 
+/* Header styling */
+h1 {
+  color: #333;
+  text-align: center;
+}
