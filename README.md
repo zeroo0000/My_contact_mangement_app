@@ -1,5 +1,4 @@
 # My_contact_mangement_app
-# Contact Management App
 
 This is a simple Angular application for managing contacts, featuring a contact list, a form for adding/editing contacts, and basic CRUD operations via a backend API. The application is designed for efficient management of personal or business contacts and utilizes Angular 18.x.
 
