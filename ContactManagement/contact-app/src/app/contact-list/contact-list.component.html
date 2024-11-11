@@ -1,1 +1,33 @@
-<p>contact-list works</p>
+<div class="contact-list-container">
+  <h2>Contact List</h2>
+
+  <div class="actions">
+    <button class="add-button" (click)="addContact()">Add New Contact</button>
+  </div>
+
+  <table class="contact-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let contact of contacts">
+        <td>{{ contact.name }}</td>
+        <td>{{ contact.email }}</td>
+        <td>{{ contact.phone }}</td>
+        <td>
+          <button class="edit-button" (click)="editContact(contact)">Edit</button>
+          <button class="delete-button" (click)="deleteContact(contact.id)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div *ngIf="contacts.length === 0" class="empty-message">
+    No contacts available. Click "Add New Contact" to get started.
+  </div>
+</div>
